@@ -1,0 +1,264 @@
+{
+    "coverPhotos": [
+        {
+            "id": 1,
+            "photo": [
+                "https://www.linkpicture.com/q/cover1_1.jpg",
+                "https://www.linkpicture.com/q/cover2.jpg",
+                "https://www.linkpicture.com/q/cover3.jpg"
+            ],
+            "details": "Cupcake with dairy milk chocolate",
+            "fav": 10,
+            "pantry": 6,
+            "cook": "1 hr 15 min",
+            "extra": [
+                {
+                    "id": 1,
+                    "name": "CAL",
+                    "total": "587",
+                    "perc": 60
+                },
+                {
+                    "id": 2,
+                    "name": "FAT",
+                    "total": "7g",
+                    "perc": 50
+                },
+                {
+                    "id": 3,
+                    "name": "CARBS",
+                    "total": "80g",
+                    "perc": 75
+                },
+                {
+                    "id": 4,
+                    "name": "PROT",
+                    "total": "49g",
+                    "perc": 70
+                }
+            ],
+            "tags": [
+                "Beef",
+                "Cheese",
+                "Vegetables"
+            ]
+        },
+        {
+            "id": 2,
+            "photo": [
+                "https://www.linkpicture.com/q/cover2.jpg",
+                "https://www.linkpicture.com/q/cover3.jpg",
+                "https://www.linkpicture.com/q/cover4.jpg"
+            ],
+            "details": "Fresh and healthy fruits",
+            "fav": 40,
+            "pantry": 8,
+            "cook": "1 hr 15 min",
+            "extra": [
+                {
+                    "id": 1,
+                    "name": "CAL",
+                    "total": "587",
+                    "perc": 60
+                },
+                {
+                    "id": 2,
+                    "name": "FAT",
+                    "total": "7g",
+                    "perc": 50
+                },
+                {
+                    "id": 3,
+                    "name": "CARBS",
+                    "total": "80g",
+                    "perc": 75
+                },
+                {
+                    "id": 4,
+                    "name": "PROT",
+                    "total": "49g",
+                    "perc": 70
+                }
+            ],
+            "tags": [
+                "Beef",
+                "Cheese",
+                "Vegetables"
+            ]
+        },
+        {
+            "id": 3,
+            "photo": [
+                "https://www.linkpicture.com/q/cover3.jpg",
+                "https://www.linkpicture.com/q/cover4.jpg",
+                "https://www.linkpicture.com/q/cover5.jpg"
+            ],
+            "details": "Cupcake with dark chocolate",
+            "fav": 20,
+            "pantry": 2,
+            "cook": "1 hr 15 min",
+            "extra": [
+                {
+                    "id": 1,
+                    "name": "CAL",
+                    "total": "587",
+                    "perc": 60
+                },
+                {
+                    "id": 2,
+                    "name": "FAT",
+                    "total": "7g",
+                    "perc": 50
+                },
+                {
+                    "id": 3,
+                    "name": "CARBS",
+                    "total": "80g",
+                    "perc": 75
+                },
+                {
+                    "id": 4,
+                    "name": "PROT",
+                    "total": "49g",
+                    "perc": 70
+                }
+            ],
+            "tags": [
+                "Beef",
+                "Cheese",
+                "Vegetables"
+            ]
+        },
+        {
+            "id": 4,
+            "photo": [
+                "https://www.linkpicture.com/q/cover4.jpg",
+                "https://www.linkpicture.com/q/cover5.jpg",
+                "https://www.linkpicture.com/q/cover1_1.jpg"
+            ],
+            "details": "Cream of onion soup",
+            "fav": 5,
+            "pantry": 9,
+            "cook": "1 hr 15 min",
+            "extra": [
+                {
+                    "id": 1,
+                    "name": "CAL",
+                    "total": "587",
+                    "perc": 60
+                },
+                {
+                    "id": 2,
+                    "name": "FAT",
+                    "total": "7g",
+                    "perc": 50
+                },
+                {
+                    "id": 3,
+                    "name": "CARBS",
+                    "total": "80g",
+                    "perc": 75
+                },
+                {
+                    "id": 4,
+                    "name": "PROT",
+                    "total": "49g",
+                    "perc": 70
+                }
+            ],
+            "tags": [
+                "Beef",
+                "Cheese",
+                "Vegetables"
+            ]
+        },
+        {
+            "id": 5,
+            "photo": [
+                "https://www.linkpicture.com/q/cover5.jpg",
+                "https://www.linkpicture.com/q/cover1_1.jpg",
+                "https://www.linkpicture.com/q/cover2.jpg"
+            ],
+            "details": "Coffee with marchamlo",
+            "fav": 18,
+            "pantry": 8,
+            "cook": "1 hr 15 min",
+            "extra": [
+                {
+                    "id": 1,
+                    "name": "CAL",
+                    "total": "587",
+                    "perc": 60
+                },
+                {
+                    "id": 2,
+                    "name": "FAT",
+                    "total": "7g",
+                    "perc": 50
+                },
+                {
+                    "id": 3,
+                    "name": "CARBS",
+                    "total": "80g",
+                    "perc": 75
+                },
+                {
+                    "id": 4,
+                    "name": "PROT",
+                    "total": "49g",
+                    "perc": 70
+                }
+            ],
+            "tags": [
+                "Beef",
+                "Cheese",
+                "Vegetables"
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": 0,
+            "title": "filter"
+        },
+        {
+            "id": 1,
+            "title": "cook now"
+        },
+        {
+            "id": 2,
+            "title": "Breakfast"
+        },
+        {
+            "id": 3,
+            "title": "low price"
+        },
+        {
+            "id": 4,
+            "title": "fruits"
+        },
+        {
+            "id": 5,
+            "title": "dessert"
+        }
+    ],
+    "miniuts": [
+        15,
+        30,
+        45,
+        60
+    ],
+    "daily": [
+        "Breakfast",
+        "Lunch",
+        "Snack",
+        "Dinner"
+    ],
+    "cui": [
+        "American",
+        "Arabic",
+        "Chinese",
+        "Japanies",
+        "Italy"
+    ]
+}
