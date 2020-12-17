@@ -1020,6 +1020,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@ptomasroos/react-native-multi-slider@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@ptomasroos/react-native-multi-slider/-/react-native-multi-slider-2.2.2.tgz#35a97fb8c355627c6a2ded010b360ac5728b44ad"
+  integrity sha512-HWyCnRD3Z3SbHK2FLWYmBBqd1B4iXipeKv1+AK0FoY/CElEDTEixHE8hN60TsqxalPrznn798LE2Q4tHuCiyaA==
+
 "@react-native-community/cli-debugger-ui@^4.13.1":
   version "4.13.1"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.13.1.tgz#07de6d4dab80ec49231de1f1fbf658b4ad39b32c"
@@ -6601,11 +6606,6 @@ rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
-
-rn-range-slider@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/rn-range-slider/-/rn-range-slider-2.0.3.tgz#bed56fdac9bff5fd97a03846442077c9d3eb3061"
-  integrity sha512-tQE8aZ31VexrKfqFPMIr6Et9xrtpRJzo0sLoCB5HNRtXZ9J/NM9FAWSidcfS8wOep1hIf7pY/BTEh8tw5iDcQw==
 
 rsvp@^4.8.4:
   version "4.8.5"

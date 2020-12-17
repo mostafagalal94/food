@@ -13,6 +13,7 @@
     "android_p": "cd android && ./gradlew assembleRelease && cd ../ && react-native run-android --variant=release"
   },
   "dependencies": {
+    "@ptomasroos/react-native-multi-slider": "^2.2.2",
     "@react-native-firebase/app": "^10.2.0",
     "@react-native-firebase/messaging": "^10.2.0",
     "native-base": "^2.13.15",
@@ -25,8 +26,7 @@
     "react-native-screens": "^2.16.1",
     "react-native-svg": "^12.1.0",
     "react-native-swiper": "^1.6.0",
-    "react-native-youtube": "^2.0.1",
-    "rn-range-slider": "^2.0.3"
+    "react-native-youtube": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

@@ -5,14 +5,14 @@ import {
 import { Card, Container, Header, Icon, Input, Item, Row } from 'native-base';
 
 
-import Styles, { buttonColor, hp, lor, primaryColor, rol, secondaryColor, wp } from './Assets/style/Styles'
+import Styles, { hp, lor, primaryColor, rol, secondaryColor, wp } from './Assets/style/Styles'
 
 import styles from './Assets/style/Styles';
 import { Actions } from 'react-native-router-flux';
 
 import { coverPhotos, categories, miniuts, daily, cui } from '../Data.json'
-import Slider from 'rn-range-slider';
 
+import MultiSlider from '@ptomasroos/react-native-multi-slider'
 
 
 
@@ -210,16 +210,23 @@ export default class Home extends Component {
 
                             </View>
                             <View style={styles.rangRow}>
-                                <Slider
-                                    style={styles.slider}
+                                <MultiSlider
+                                    values={[low, hei]}
+                                    isMarkersSeparated={true}
+                                    customMarkerLeft={(e) => {
+                                        return (<View style={styles.thumb}
+                                            currentValue={e.currentValue} />)
+                                    }}
+                                    customMarkerRight={(e) => {
+                                        return (<View style={styles.thumb}
+                                            currentValue={e.currentValue} />)
+                                    }}
+                                    sliderLength={wp(90)}
                                     min={30}
                                     max={600}
                                     step={10}
-                                    floatingLabel
-                                    renderThumb={() => <View style={styles.thumb} />}
-                                    renderRail={() => <View style={styles.rail} />}
-                                    renderRailSelected={() => <View style={[styles.rail, { backgroundColor: buttonColor, }]} />}
-                                    onValueChanged={(low, hei) => this.setState({ low, hei })}
+                                    onValuesChangeFinish={(value) => this.setState({ low: value[0], hei: value[1] })}
+
                                 />
                                 <View style={styles.randeDetailsRow}>
                                     <Text style={[styles.normalText, { color: '#808080', fontSize: wp(3) }]}>
@@ -236,6 +243,7 @@ export default class Home extends Component {
                                 </Text>
 
                             </View>
+
                             <FlatList
                                 showsHorizontalScrollIndicator={false}
                                 data={cui}
@@ -244,8 +252,8 @@ export default class Home extends Component {
                                 style={{ marginLeft: wp(5) }}
                                 keyExtractor={(item) => item.toString()}
                             />
-
                         </Card>
+
                     </View>
                 </Modal>
             </Container>

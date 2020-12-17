@@ -1,14 +1,13 @@
 import React from 'react';
-import { Image, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Router, Tabs, Scene, Stack } from 'react-native-router-flux';
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
 import Home from './components/Home';
 
 import Product from './components/Product';
-// import Profile from './components/Profile';
+import { Icon } from 'native-base';
+import Styles, { buttonColor, hp, lor, primaryColor, rol, secondaryColor, wp } from './components/Assets/style/Styles';
 
-// import Turntime from './components/Turntime';
 
 
 
@@ -16,37 +15,33 @@ import Product from './components/Product';
 const ImageIcon = ({ name, focused }) => {
 
   let image;
-  let colorHex = focused ? '#332f80' : '#1d1a1c';
-
+  let colorHex = focused ? buttonColor : '#808080';
+  let type = 'AntDesign'
   switch (name) {
-    case 'duration':
-      image = require('./components/Assets/images/duration.png')
+    case 'Recipes':
+      image = 'filetext1'
       break;
-    case 'home':
-      image = require('./components/Assets/images/home.png')
+    case 'Favourite':
+      image = 'hearto'
       break;
-    case 'notify':
-      image = require('./components/Assets/images/notify.png')
+    case 'Shoplist':
+      image = 'shoppingcart'
       break;
-    case 'acc':
-      image = require('./components/Assets/images/acc.png')
+    case 'Pantry':
+      image = 'box'
+      type = 'Entypo'
+      break;
+    case 'Profile':
+      image = 'user'
       break;
 
   }
   return (
-    <View style={{ width: wp(10), height: hp(6), justifyContent: 'center', alignItems: 'center', alignContent: 'center' }}>
-      <Image
-        style={{
-          tintColor: colorHex,
-          opacity: 1,
-          alignSelf: 'center',
-          width: wp(5.5),
-          height: hp(4.5),
-          resizeMode: 'contain',
-
-        }}
-        source={image}
-      />
+    <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Icon name={image} type={type} style={{ fontSize: wp(6), color: colorHex }} />
+      <Text style={[Styles.normalText, { color: colorHex, fontSize: wp(3) }]}>
+        {name}
+      </Text>
     </View>
   )
 };
@@ -64,13 +59,12 @@ const Routercomponent = () => {
           }}
           hideNavBar
         >
-          {/* <Scene key="active" component={Turntime} hideNavBar name='duration' icon={ImageIcon} /> */}
-          <Scene key="Home" component={Home} hideNavBar name='home' icon={ImageIcon} />
-          <Scene key="notify" component={Home} hideNavBar name='notify' icon={ImageIcon} />
-          <Scene key="duration" component={Home} hideNavBar name='duration' icon={ImageIcon} />
-          <Scene key="acc" component={Home} hideNavBar name='acc' icon={ImageIcon} />
+          <Scene component={Home} hideNavBar name='Recipes' icon={ImageIcon} />
+          <Scene component={Home} hideNavBar name='Favourite' icon={ImageIcon} />
+          <Scene component={Home} hideNavBar name='Shoplist' icon={ImageIcon} />
+          <Scene component={Home} hideNavBar name='Pantry' icon={ImageIcon} />
 
-          {/* <Scene key="User" component={Profile} hideNavBar name='acc' icon={ImageIcon} /> */}
+          <Scene component={Home} hideNavBar name='Profile' icon={ImageIcon} />
         </Tabs>
         <Scene key="product" component={Product} hideNavBar />
       </Stack>

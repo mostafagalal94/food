@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
         marginTop: hp(5),
         width: wp(90),
         alignSelf: 'center',
-        marginTop: hp(3),
+        marginTop: hp(3.5),
         marginBottom: hp(2),
         justifyContent: 'space-between',
         flexDirection: 'row'
@@ -222,20 +222,13 @@ const styles = StyleSheet.create({
         width: moderateScale(10),
         height: moderateScale(10),
         borderRadius: moderateScale(10),
-        borderWidth: wp(.8),
+        borderWidth: wp(.6),
         borderColor: '#808080',
         backgroundColor: '#ffffff',
     },
-    rail: {
-        flex: 1,
-        height: hp(.5),
-        // borderRadius: 2,
-        backgroundColor: '#808080',
-    },
     randeDetailsRow: {
         justifyContent: 'space-between',
-        flexDirection: 'row',
-        marginTop: hp(1)
+        flexDirection: 'row'
     }
 });
 export default styles;
